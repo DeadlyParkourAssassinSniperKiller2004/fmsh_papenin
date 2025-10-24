@@ -1,5 +1,8 @@
 #include <iostream>
 
 int main() {
-    std::cout << decrypted();
+    int a = 2;
+    int b = 5;
+
+    std::cout << a + b;
 }
