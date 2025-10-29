@@ -11,4 +11,5 @@ add_executable(fmsh_papenin
         main.cpp
         main.h
         A.cpp
+        B.cpp
 )
