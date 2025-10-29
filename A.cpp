@@ -1,18 +1,22 @@
-#include <iostream>
 #include <string>
+#include <iostream>
 
-std::pair <std::string, int> encrypt() {
+std::string encrypt() {
     std::string s;
-    int i;
+    std::string i;
     std::cin >> s;
     std::cin >> i;
-    return std::make_pair(s, i);
+    std::string s2 = "";
+    std::string s3 = "";
+    while (s2.length() < s.length()) {
+        s2 += i;
+    }
+    for (int a = 0; a < s.length(); a++) {
+        s3 += s2[a] ^ s[a];
+    }
+    return s3;
 }
 
-std::string decrypt() {
-    auto x = encrypt();
-    for (int a = 0; a < x.first.length(); a++) {
-        x.first[a] += x.second;
-    }
-    return x.first;
+int main() {
+    std::cout << encrypt();
 }
