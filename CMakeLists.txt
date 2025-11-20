@@ -13,4 +13,6 @@ add_executable(fmsh_papenin
         A.cpp
         B.cpp
         C.cpp
+        D.cpp
+        ArgMax.cpp
 )
